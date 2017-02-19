@@ -1,0 +1,12 @@
+const {objectID}=require('mongoose');
+
+const {mongoose} = require('./mongoose');
+const {Todo} = require('./../models/todo');
+const {User} = require('./../models/user');
+Todo.findByIdAndRemove('58a9afdfebbb11cc0e417786').then((todo)=>{
+console.log(todo);
+})
+
+
+
+
